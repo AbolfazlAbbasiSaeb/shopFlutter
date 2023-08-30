@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "2829596289",
+    "project_id": "toplearn-shop",
+    "storage_bucket": "toplearn-shop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2829596289:android:8fed4d05fe3e12f6cb3f80",
+        "android_client_info": {
+          "package_name": "com.example.shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "2829596289-p5avka58qrv1kf7qkfmv9jeqh9a2b90v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfIaGGgu7p8qOJASUmZ1X1Bqbmd-W0KhY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "2829596289-p5avka58qrv1kf7qkfmv9jeqh9a2b90v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
