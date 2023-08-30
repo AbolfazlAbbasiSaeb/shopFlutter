@@ -50,8 +50,8 @@ class _SearchResultsPageState extends State<SearchResultsPage> {
     } else {
       search = value;
     }
-    final response = await http
-        .get(Uri.parse("https://api.abolfazlabasi.ir/api/product?q=$search"));
+    final response =
+        await http.get(Uri.parse("https://yoursite.com/api/product?q=$search"));
     if (response.statusCode == 200) {
       return List<Product>.from(
           json.decode(response.body).map((x) => Product.fromJson(x)).toList());
@@ -121,7 +121,7 @@ class _SearchResultsPageState extends State<SearchResultsPage> {
                                 style: PersianFonts.Shabnam,
                               ),
                               Image.network(
-                                  "https://api.abolfazlabasi.ir/storage/app/${product.image}",
+                                  "https://yoursite.com/storage/app/${product.image}",
                                   width: 100),
                               // Text('${product.price} \$'),
                             ],

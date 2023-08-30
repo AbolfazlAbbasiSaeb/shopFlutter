@@ -62,8 +62,8 @@ class StorePage extends StatefulWidget {
 class _StorePageState extends State<StorePage> {
   @override
   Future<List<Categories>> _fetchCategories() async {
-    final response = await http
-        .get(Uri.parse("https://api.abolfazlabasi.ir/api/categories"));
+    final response =
+        await http.get(Uri.parse("https://yoursite.com/api/categories"));
     if (response.statusCode == 200) {
       return List<Categories>.from(json
           .decode(response.body)
@@ -76,7 +76,7 @@ class _StorePageState extends State<StorePage> {
 
   Future<List<Product>> _fetchProducts() async {
     final response =
-        await http.get(Uri.parse("https://api.abolfazlabasi.ir/api/products"));
+        await http.get(Uri.parse("https://yoursite.com/api/products"));
     if (response.statusCode == 200) {
       return List<Product>.from(
           json.decode(response.body).map((x) => Product.fromJson(x)).toList());
@@ -262,7 +262,7 @@ class _StorePageState extends State<StorePage> {
                         children: [
                           Expanded(
                               child: Image.network(
-                                  "https://api.abolfazlabasi.ir/storage/app/${product.image}")),
+                                  "https://yoursite.com/storage/app/${product.image}")),
                           SizedBox(
                             height: 10,
                           ),

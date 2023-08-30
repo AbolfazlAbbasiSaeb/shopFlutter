@@ -15,8 +15,8 @@ class ProductView extends StatefulWidget {
 class _ProductViewState extends State<ProductView> {
   Future _fetchProducts() async {
     var id = widget.product_id;
-    final response = await http
-        .get(Uri.parse("https://api.abolfazlabasi.ir/api/products/$id"));
+    final response =
+        await http.get(Uri.parse("https://yoursite.com/api/products/$id"));
     if (response.statusCode == 200) {
       return json.decode(response.body);
     } else {
@@ -48,7 +48,7 @@ class _ProductViewState extends State<ProductView> {
                       ],
                     ),
                     Image.network(
-                        "https://api.abolfazlabasi.ir/storage/app/${snapshot.data['image']}"),
+                        "https://yoursite.com/storage/app/${snapshot.data['image']}"),
                     Text(
                       snapshot.data['name'],
                       textDirection: TextDirection.rtl,
